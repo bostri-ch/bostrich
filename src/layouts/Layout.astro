@@ -55,11 +55,8 @@ const ogImageURL = new URL(image, Astro.site);
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <!-- Preconnect for analytics -->
-    <link rel="preconnect" href="https://analytics.bostri.ch" />
-
-    <!-- Umami Analytics -->
-    <script defer src="https://analytics.bostri.ch/script.js" data-website-id="d1b8bc0d-cf9d-4265-bf78-99bbe818756e"></script>
+    <!-- Vercel Web Analytics (same-origin, only served in production) -->
+    <script defer src="/_vercel/insights/script.js"></script>
 
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify({
